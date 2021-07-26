@@ -263,7 +263,7 @@ class YoLov5TRT(object):
         # Reshape to a two dimentional ndarray
         pred = np.reshape(output[1:], (-1, 6))[:num, :]
         # to a torch Tensor
-        pred = torch.Tensor(pred).cuda()
+        pred = torch.Tensor(pred).cpu()
         # Get the boxes
         boxes = pred[:, :4]
         # Get the scores
