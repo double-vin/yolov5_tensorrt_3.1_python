@@ -1,1 +1,0 @@
-rtsp://id:password@ip:554/h264/ch1/main/av_stream
